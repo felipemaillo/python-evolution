@@ -16,5 +16,11 @@ currency.resume(price, 10, 13)
 # Exec 112
 from utils import data, currency
 
-price = data.read_currency('Enter the price $: ')
+price = data.read_float('Enter the price $: ')
 currency.resume(price, 35, 22)
+
+# Exec 113
+from utils import data
+
+value = data.read_int('Enter an integer: ')
+print(f'You entered {value}')
